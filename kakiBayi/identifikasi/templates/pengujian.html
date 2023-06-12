@@ -1,0 +1,164 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IDENTIFIKASI</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title> Login </title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="{% static '/img/footprint-icon.png' %}" rel="icon">
+        <!-- <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+        <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href="{% static '/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+        <link href="{% static '/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+        <link href="{% static '/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+        <link href="{% static '/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <i class="bi bi-list toggle-sidebar-btn"></i>
+                <a href="/pelatihan" class="d-inline-flex align-items-center">
+                    <img src="{% static '/img/footprint-icon.png' %}" width="30px" height="30px" alt="">
+                    <div class="pagetitle" >
+                        <h1>Identifikasi Telapak Kaki Bayi</h1>
+                    </div>
+                </a>
+                
+            </div><!-- End Logo -->
+
+            <!--fixed-header-->
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item dropdown pe-3">
+
+                        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                          <img src="{% static '/img/footprint-icon.png' %}" alt="Profile" class="rounded-circle">
+                          <span class="d-none d-md-block dropdown-toggle ps-2">Nama User</span>
+                        </a><!-- End Profile image Icon -->
+              
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                          <li class="dropdown-header">
+                            <h6>Nama User</h6>
+                            <span>Admin Rumah Sakit</span>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                              <i class="bi bi-box-arrow-right"></i>
+                              <span>Sign Out</span>
+                            </a>
+                          </li>
+              
+                        </ul><!-- End Profile Dropdown Items -->
+                    </li><!-- End Profile Nav -->
+              
+                </ul>
+            </nav>        
+
+            <!--side-bar-->
+            <aside id="sidebar" class="sidebar">
+
+              <ul class="sidebar-nav" id="sidebar-nav">
+                    
+                <li class="nav-item">
+                    <a class="nav-link " href="/pelatihan">
+                    <i class="bi bi-grid"></i>
+                    <span>Pelatihan</span>
+                    </a>
+                </li><!-- End Pelatihan Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="/pengujian">
+                    <i class="bi bi-grid"></i>
+                    <span>Identifikasi</span>
+                    </a>
+                </li><!-- End Pengujian Nav -->
+            </ul>
+            
+            </aside><!-- End Sidebar-->
+
+        
+        </header><!-- End Header -->
+        <!-- <h1>Page PENGUJIAN</h1> -->
+
+        <main id="main" class="main">
+
+            <div class="pagetitle">
+              <h1>Pelatihan Citra Kaki Bayi</h1>
+            </div><!-- End Page Title -->
+        
+            <section class="section">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Identifikasi Telapak Kaki bayi</h5>
+        
+                        <!-- General Form Elements -->
+                        <form>
+                            
+                            <div class="row mb-3">
+                                <label for="inputNumber" class="col-sm-2 col-form-label">Upload File</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div>
+                                    <img src="{% static '/img/footprint-icon.png' %}" width="150px" height="300px" alt="">
+                                </div>
+                            </div>
+                            <div class="row mb-3 ">
+                                <!-- <label class="col-sm-2 col-form-label">Submit Button</label> -->
+                                <!-- <button type="submit" class="btn btn-primary "> Identifikasi</button> -->
+                                <div class="col-xl-12 justify-content-center">
+                                    <button type="submit" class="btn btn-primary">Identifikasi </button>
+                                </div>
+                            </div>       
+                        </form><!-- End General Form Elements -->
+                    </div>
+                </div>
+
+                
+
+            </section>
+
+
+
+
+        
+          </main><!-- End #main -->
+
+
+        
+
+        <!-- Vendor JS Files -->
+        <script src="{% static '/vendor/apexcharts/apexcharts.min.js' %}"></script>
+        <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static '/vendor/chart.js/chart.umd.js' %}"></script>
+        <script src="{% static '/vendor/echarts/echarts.min.js' %}"></script>
+        <script src="{% static '/vendor/quill/quill.min.js' %}"></script>
+        <script src="{% static '/vendor/simple-datatables/simple-datatables.js' %}"></script>
+        <script src="{% static '/vendor/tinymce/tinymce.min.js' %}"></script>
+        <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+      
+        <!-- Template Main JS File -->
+        <script src="{% static '/js/main.js' %}"></script>
+    </body>
+</html>
